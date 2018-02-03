@@ -1,0 +1,22 @@
+  html, body { height: 100%;}
+  #map { height: 100%; }
+  
+  
+ 
+  #wikipedia-links{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  #pano {
+    width: 100%;
+    height: 200px;
+  }
+  .card-title{
+    font-size: 17px;
+    font-weight: bolder;
+    color: rgb(184, 26, 26);
+    border: 1rem;
+  }
+  .card{
+    width:250px;
+  }
