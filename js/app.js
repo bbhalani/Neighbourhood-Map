@@ -143,12 +143,24 @@ var viewModel = function(){
   // Push the marker to our array of markers.
   markers.push(this.marker);
   function popInfo(){
+    animateMarker(this);
     populateInfoWindow(this, infowindow);
     $('.navbar-collapse').collapse('hide');
   }
   
   function highLightMarkerIcon() {
     this.setIcon(highlightedIcon);
+  }
+  function animateMarker(currentItem){
+    if (currentItem.getAnimation() !== null) {
+      currentItem.setAnimation(null);
+    } else {
+      currentItem.setAnimation(google.maps.Animation.BOUNCE);
+    }
+    setTimeout(function(){
+      currentItem.setAnimation(null);
+    },2000);
+  
   }
   
   function defaultMarkerIcon() {
