@@ -8,7 +8,7 @@ This application is an interactive map of Ney York City with some popular locati
 ### Installation
 To run this application you will be required internet
 1. cone this repository by 
-```git clone ```
+```git clone https://github.com/bbhalani/Neighbourhood-Map.git```
 2. open index.html page in browser
 
 ### Technologies Used
